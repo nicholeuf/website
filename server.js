@@ -5,13 +5,13 @@ const express = require('express');
 const port = process.env.PORT || 8080;
 const app = express();
 
-app.use(function enforceSecure(req, res, next) {
-  if (req.get('X-Forwarded-Proto') !== 'https') {
-    return res.redirect('https://' + req.get('Host') + req.url);
-  }
-
-  return next();
-});
+// app.use(function enforceSecure(req, res, next) {
+//   if (req.get('X-Forwarded-Proto') !== 'https') {
+//     return res.redirect('https://' + req.get('Host') + req.url);
+//   }
+//
+//   return next();
+// });
 
 // compress all responses
 app.use(compression())
