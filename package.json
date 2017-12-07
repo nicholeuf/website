@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "cloudinary-react": "^1.0.4",
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
