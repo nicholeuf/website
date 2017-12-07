@@ -1,0 +1,13 @@
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #F0EFF0;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: 1024px;
+    margin: auto;
+  }
+}
