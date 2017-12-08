@@ -1,10 +1,13 @@
 branch-defaults:
   master:
-    environment: website-prod
+    environment: null
+    group_suffix: null
 global:
   application_name: website
-  default_ec2_keyname: null
+  branch: master
+  default_ec2_keyname: nicholeuf
   default_platform: node.js
   default_region: us-east-1
-  profile: eb-cli
+  profile: null
+  repository: website
   sc: git

@@ -29,7 +29,7 @@ jobs:
       steps:
         - run:
             name: Deploy if tests pass and branch is Master
-            command: eb deploy website-prod
+            command: eb deploy
 
 workflows:
   version: 2
