@@ -27,10 +27,5 @@ jobs:
           name: Deploy to AWS EB
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              apt-get -y -qq update
-              apt-get -y -qq install python3.4-dev
-              curl -O https://bootstrap.pypa.io/get-pip.py
-              python3.4 get-pip.py --user
-              pip install awsebcli
               eb deploy --timeout 20
             fi
