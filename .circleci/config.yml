@@ -22,10 +22,4 @@ jobs:
       # run tests!
       - run: yarn test
       - run: npm run lint
-
-      - deploy:
-          name: Deploy to AWS EB
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              eb deploy --timeout 20
-            fi
+      - run: eb deploy --timeout 20
