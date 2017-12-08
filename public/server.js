@@ -15,10 +15,10 @@ const app = express();
 
 // compress all responses
 app.use(compression())
-app.use(express.static('public'));
+app.use(express.static('static'));
 
 app.get('*', function response(req, res) {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(port, '0.0.0.0', function onStart(err) {
